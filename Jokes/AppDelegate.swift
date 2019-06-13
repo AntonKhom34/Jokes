@@ -12,20 +12,19 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
+
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
+
         let window = UIWindow(frame: UIScreen.main.bounds)
         self.window = window
-        
-        let rootViewController = ViewControllersFactory.makeJokesListViewController()
+
+        let rootViewController = ViewControllersFactory.makeTabBarViewController()
         let navigationVontroller = UINavigationController(rootViewController: rootViewController)
-        
+
         window.rootViewController = navigationVontroller
         window.makeKeyAndVisible()
-        
+
         return true
     }
-    
 }

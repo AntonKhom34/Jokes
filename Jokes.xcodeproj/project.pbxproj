@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		AEB3F2C12ADD75EB3BD3B3A6 /* Pods_Jokes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A315ED454AF8965F1263BE /* Pods_Jokes.framework */; };
+		CDA5BE9422B292AC002E7DB8 /* JokesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA5BE9322B292AC002E7DB8 /* JokesListPresenter.swift */; };
+		CDA5BE9622B292B8002E7DB8 /* JokesListPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA5BE9522B292B8002E7DB8 /* JokesListPresenterProtocol.swift */; };
+		CDA5BE9922B29326002E7DB8 /* JokesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA5BE9722B29326002E7DB8 /* JokesListViewController.swift */; };
+		CDA5BE9A22B29326002E7DB8 /* JokesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDA5BE9822B29326002E7DB8 /* JokesListViewController.xib */; };
+		CDA5BE9C22B29345002E7DB8 /* JokesListViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA5BE9B22B29345002E7DB8 /* JokesListViewProtocol.swift */; };
+		CDA5BE9F22B293A8002E7DB8 /* JokesListProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA5BE9E22B293A8002E7DB8 /* JokesListProvider.swift */; };
+		CDA5BEA122B293E0002E7DB8 /* JokesListProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA5BEA022B293E0002E7DB8 /* JokesListProviderProtocol.swift */; };
+		CDA5BEA422B2945F002E7DB8 /* ApiServies.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA5BEA322B2945F002E7DB8 /* ApiServies.swift */; };
+		CDA5BEA622B2946D002E7DB8 /* ApiServiesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA5BEA522B2946D002E7DB8 /* ApiServiesProtocol.swift */; };
 		CDC60A1E22B2743B0040ECA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC60A1D22B2743B0040ECA8 /* AppDelegate.swift */; };
 		CDC60A2522B2743C0040ECA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC60A2422B2743C0040ECA8 /* Assets.xcassets */; };
 		CDC60A3122B276010040ECA8 /* ViewControllersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC60A3022B276010040ECA8 /* ViewControllersFactory.swift */; };
@@ -16,6 +25,15 @@
 /* Begin PBXFileReference section */
 		09A315ED454AF8965F1263BE /* Pods_Jokes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jokes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4927337898004BAFA421557D /* Pods-Jokes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jokes.debug.xcconfig"; path = "Target Support Files/Pods-Jokes/Pods-Jokes.debug.xcconfig"; sourceTree = "<group>"; };
+		CDA5BE9322B292AC002E7DB8 /* JokesListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesListPresenter.swift; sourceTree = "<group>"; };
+		CDA5BE9522B292B8002E7DB8 /* JokesListPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesListPresenterProtocol.swift; sourceTree = "<group>"; };
+		CDA5BE9722B29326002E7DB8 /* JokesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesListViewController.swift; sourceTree = "<group>"; };
+		CDA5BE9822B29326002E7DB8 /* JokesListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JokesListViewController.xib; sourceTree = "<group>"; };
+		CDA5BE9B22B29345002E7DB8 /* JokesListViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesListViewProtocol.swift; sourceTree = "<group>"; };
+		CDA5BE9E22B293A8002E7DB8 /* JokesListProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesListProvider.swift; sourceTree = "<group>"; };
+		CDA5BEA022B293E0002E7DB8 /* JokesListProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesListProviderProtocol.swift; sourceTree = "<group>"; };
+		CDA5BEA322B2945F002E7DB8 /* ApiServies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServies.swift; sourceTree = "<group>"; };
+		CDA5BEA522B2946D002E7DB8 /* ApiServiesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiesProtocol.swift; sourceTree = "<group>"; };
 		CDC60A1A22B2743B0040ECA8 /* Jokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC60A1D22B2743B0040ECA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDC60A2422B2743C0040ECA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,8 +68,53 @@
 				4927337898004BAFA421557D /* Pods-Jokes.debug.xcconfig */,
 				F2405311716E0D99C138A0B3 /* Pods-Jokes.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		CDA5BE9022B2928A002E7DB8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CDA5BE9722B29326002E7DB8 /* JokesListViewController.swift */,
+				CDA5BE9822B29326002E7DB8 /* JokesListViewController.xib */,
+				CDA5BE9B22B29345002E7DB8 /* JokesListViewProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CDA5BE9122B2928D002E7DB8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CDA5BEA222B29455002E7DB8 /* ApiServies */,
+				CDA5BE9D22B29399002E7DB8 /* Provider */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CDA5BE9222B2928F002E7DB8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CDA5BE9322B292AC002E7DB8 /* JokesListPresenter.swift */,
+				CDA5BE9522B292B8002E7DB8 /* JokesListPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CDA5BE9D22B29399002E7DB8 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				CDA5BE9E22B293A8002E7DB8 /* JokesListProvider.swift */,
+				CDA5BEA022B293E0002E7DB8 /* JokesListProviderProtocol.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		CDA5BEA222B29455002E7DB8 /* ApiServies */ = {
+			isa = PBXGroup;
+			children = (
+				CDA5BEA322B2945F002E7DB8 /* ApiServies.swift */,
+				CDA5BEA522B2946D002E7DB8 /* ApiServiesProtocol.swift */,
+			);
+			path = ApiServies;
 			sourceTree = "<group>";
 		};
 		CDC60A1122B2743B0040ECA8 = {
@@ -87,6 +150,9 @@
 		CDC60A3222B276980040ECA8 /* JokesList */ = {
 			isa = PBXGroup;
 			children = (
+				CDA5BE9222B2928F002E7DB8 /* Presenter */,
+				CDA5BE9122B2928D002E7DB8 /* Model */,
+				CDA5BE9022B2928A002E7DB8 /* View */,
 			);
 			path = JokesList;
 			sourceTree = "<group>";
@@ -152,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDC60A2522B2743C0040ECA8 /* Assets.xcassets in Resources */,
+				CDA5BE9A22B29326002E7DB8 /* JokesListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,8 +272,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDA5BEA622B2946D002E7DB8 /* ApiServiesProtocol.swift in Sources */,
+				CDA5BE9922B29326002E7DB8 /* JokesListViewController.swift in Sources */,
+				CDA5BE9C22B29345002E7DB8 /* JokesListViewProtocol.swift in Sources */,
+				CDA5BE9F22B293A8002E7DB8 /* JokesListProvider.swift in Sources */,
+				CDA5BEA422B2945F002E7DB8 /* ApiServies.swift in Sources */,
 				CDC60A1E22B2743B0040ECA8 /* AppDelegate.swift in Sources */,
+				CDA5BE9422B292AC002E7DB8 /* JokesListPresenter.swift in Sources */,
+				CDA5BE9622B292B8002E7DB8 /* JokesListPresenterProtocol.swift in Sources */,
 				CDC60A3122B276010040ECA8 /* ViewControllersFactory.swift in Sources */,
+				CDA5BEA122B293E0002E7DB8 /* JokesListProviderProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
