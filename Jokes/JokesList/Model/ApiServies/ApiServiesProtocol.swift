@@ -9,4 +9,5 @@
 import Foundation
 
 protocol ApiServiesProtocol {
+    func getJokes(jokesCount: String, onComplete: @escaping ([JokesResult]) -> Void)
 }

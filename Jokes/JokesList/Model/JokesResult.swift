@@ -1,5 +1,5 @@
 //
-//  JokesListViewProtocol.swift
+//  JokesResult.swift
 //  Jokes
 //
 //  Created by Антон Хомяков on 13/06/2019.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol JokesListViewProtocol: class {
-    func reloadTable()
+struct JokesResult: JokesResultProtocol, Codable {
+    var joke: String
 }

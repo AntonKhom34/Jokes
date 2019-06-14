@@ -20,4 +20,7 @@ class JokesListProvider {
 // MARK: - JokesListProviderProtocol
 
 extension JokesListProvider: JokesListProviderProtocol {
+    func getJokes(jokesCount: String, onComplete: @escaping ([JokesResult]) -> Void) {
+        service.getJokes(jokesCount: jokesCount, onComplete: onComplete)
+    }
 }

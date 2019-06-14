@@ -9,4 +9,7 @@
 import Foundation
 
 protocol JokesListPresenterProtocol: class {
+    func loadJokes(jokesCount: String)
+    func jokesCount() -> Int
+    func jokeAtIndex(index: Int) -> String
 }
