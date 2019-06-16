@@ -13,17 +13,14 @@ class ViewControllersFactory {
     // MARK: - JokesList
 
     static func makeTabBarViewController() -> UIViewController {
+        let appearanceConfig = AppearanceConfig()
         let categoriesTabBarController = UITabBarController()
 
-        let jokesListViewController = makeJokesListViewController()
-        jokesListViewController.tabBarItem = UITabBarItem(title: "Jokes",
-                                                          image: UIImage.init(named: "RingOne"),
-                                                          tag: 0)
+        let jokesListViewController = makeJokesListViewController(appearanceConfig: appearanceConfig)
+        jokesListViewController.tabBarItem = makeJokesTabBarItem()
 
         let apiRulesViewController = makeApiRulesViewController()
-        apiRulesViewController.tabBarItem = UITabBarItem(title: "API",
-                                                           image: UIImage.init(named: "RingTwo"),
-                                                           tag: 0)
+        apiRulesViewController.tabBarItem = makeApiRulesTabBarItem()
 
         let viewControllers = [jokesListViewController, apiRulesViewController]
         categoriesTabBarController.setViewControllers(viewControllers, animated: true)
@@ -33,16 +30,29 @@ class ViewControllersFactory {
 
     // MARK: - Private
 
-    private static func makeJokesListViewController() -> UIViewController {
+    private static func makeJokesListViewController(appearanceConfig: AppearanceConfigProtocol) -> UIViewController {
         let view = JokesListViewController()
         let presenter = JokesListPresenter(view: view,
         provider: JokesListProvider(service: ApiServies()))
         view.presenter = presenter
+        view.appearanceConfig = appearanceConfig
 
-        return view
+        return UINavigationController(rootViewController: view)
     }
 
     private static func makeApiRulesViewController() -> UIViewController {
-        return UIViewController()
+        let view = BrowserViewController()
+        let presenter = BrowserPresenter(view: view)
+        view.presenter = presenter
+
+        return UINavigationController(rootViewController: view)
+    }
+
+    private static func makeJokesTabBarItem() -> UITabBarItem {
+        return UITabBarItem(title: "TabBarItem_Jokes".localize(), image: UIImage(named: "TabBar_RingOne"), tag: 0)
+    }
+
+    private static func makeApiRulesTabBarItem() -> UITabBarItem {
+        return UITabBarItem(title: "TabBarItem_API".localize(), image: UIImage(named: "TabBar_RingTwo"), tag: 0)
     }
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,11 +20,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let window = UIWindow(frame: UIScreen.main.bounds)
         self.window = window
 
-        let rootViewController = ViewControllersFactory.makeTabBarViewController()
-        let navigationVontroller = UINavigationController(rootViewController: rootViewController)
-
-        window.rootViewController = navigationVontroller
+        window.rootViewController = ViewControllersFactory.makeTabBarViewController()
         window.makeKeyAndVisible()
+
+        // MARK: - IQKeyboardManager
+
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
 
         return true
     }

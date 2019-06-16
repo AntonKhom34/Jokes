@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  Jokes
+
+  Created by Антон Хомяков on 14/06/2019.
+  Copyright © 2019 Антон Хомяков. All rights reserved.
+*/
+
+// MARK: - TabBarItem
+
+"TabBarItem_Jokes" = "Jokes";
+
+"TabBarItem_API" = "API";
+
+// MARK: - JokesViewController
+
+"TabBarItem_Title" = "Jokes";
+
+"Jokes_LoadButton" = "LOAD";
+
+// MARK: - Browser
+
+"Browser_URLString" = "http://www.icndb.com/api/";
+
+"Browser_Title" = "API";

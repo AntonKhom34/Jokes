@@ -7,4 +7,7 @@ target 'Jokes' do
 
   # Pods for Jokes
 
+pod 'MBProgressHUD', '~> 1.1.0'
+pod 'IQKeyboardManagerSwift'
+
 end
