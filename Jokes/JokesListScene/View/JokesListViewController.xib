@@ -42,7 +42,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OLg-aW-cgS">
                     <rect key="frame" x="0.0" y="772" width="414" height="90"/>
                     <subviews>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите количество шуток" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SUg-X0-ArJ">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input count of jokes" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SUg-X0-ArJ">
                             <rect key="frame" x="143.5" y="10" width="127" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="127" id="5Ms-Zg-BQK"/>

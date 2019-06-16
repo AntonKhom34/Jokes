@@ -23,7 +23,8 @@ class CommentCell: UITableViewCell, AppearanceConfigurable {
     // MARK: - Public
 
     func setText(_ text: String) {
-        rootLabel.text = "  \(text)"
+        let correctText = text.replacingOccurrences(of: "&quot;", with: "\"", options: .literal, range: nil)
+        rootLabel.text = "  \(correctText)"
     }
 
     // MARK: - AppearanceConfigurable

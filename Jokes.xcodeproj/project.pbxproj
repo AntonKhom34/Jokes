@@ -194,9 +194,9 @@
 		CDEE0B2F22B52C5F00B22998 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CDEE0B3022B52C5F00B22998 /* BrowserViewController.xib */,
 				CDEE0B3122B52C5F00B22998 /* BrowserViewProtocol.swift */,
 				CDEE0B3222B52C5F00B22998 /* BrowserViewController.swift */,
+				CDEE0B3022B52C5F00B22998 /* BrowserViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -214,8 +214,8 @@
 		CDEE0B3422B52C5F00B22998 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				CDEE0B3522B52C5F00B22998 /* JokesListPresenter.swift */,
 				CDEE0B3622B52C5F00B22998 /* JokesListPresenterProtocol.swift */,
+				CDEE0B3522B52C5F00B22998 /* JokesListPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -225,8 +225,8 @@
 			children = (
 				CDEE0B3822B52C5F00B22998 /* Provider */,
 				CDEE0B3C22B52C5F00B22998 /* ApiServies */,
-				CDEE0B3B22B52C5F00B22998 /* JokesResult.swift */,
 				CDEE0B3F22B52C5F00B22998 /* JokesResultProtocol.swift */,
+				CDEE0B3B22B52C5F00B22998 /* JokesResult.swift */,
 				CDEE0B4022B52C5F00B22998 /* DataResult.swift */,
 			);
 			path = Model;
@@ -264,8 +264,8 @@
 		CDEE0B4322B52C5F00B22998 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				CDEE0B4422B52C5F00B22998 /* CommentCell.xib */,
 				CDEE0B4522B52C5F00B22998 /* CommentCell.swift */,
+				CDEE0B4422B52C5F00B22998 /* CommentCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
