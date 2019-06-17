@@ -68,6 +68,7 @@ class JokesListViewController: UIViewController, AppearanceConfigSettable {
             fatalError("Could not get jokes count")
         }
         getPresenter().onUserSelectedJokesCount(count)
+        jokesCountTextField.text = ""
         view.endEditing(true)
     }
 
